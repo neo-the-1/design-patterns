@@ -1,0 +1,14 @@
+@startuml
+
+Client ..> Singleton
+Singleton <-- Singleton
+
+class Client
+
+class Singleton {
+    -{static} instance: Singleton
+    - Singleton()
+    +{static} getInstance(): Singleton
+}
+
+@enduml

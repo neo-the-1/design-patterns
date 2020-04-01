@@ -2,6 +2,7 @@
 
 ## Creational Design Patterns
 ### Singleton
+![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/singleton.txt)
 ### Builder
 ### Prototype
 ### Factory Method
