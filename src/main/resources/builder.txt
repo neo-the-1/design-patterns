@@ -1,0 +1,31 @@
+@startuml
+
+Client ..> Builder 
+Builder ..> ComplexProduct : creates
+Builder <|-- ConcreteBuilder
+ComplexProduct <|-- ConcreteComplexProduct
+ConcreteBuilder ..> ConcreteComplexProduct : creates
+
+class Client
+
+interface ComplexProduct
+
+interface Builder {
+    + build(): ComplexProduct
+}
+
+class ConcreteComplexProduct {
+    - attributes
+    ~ ComplexProduct(builder: ConcreteBuilder)
+    + getAttributes()
+}
+
+class ConcreteBuilder {
+    - attributes
+    + ConcreteBuilder(attribute)
+    + build(): ComplexProduct
+    + attributes(): ConcreteBuilder
+    ~ getAttributes()
+}
+
+@enduml
