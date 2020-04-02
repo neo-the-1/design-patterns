@@ -6,6 +6,7 @@
 ### Builder
 ![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/builder.txt)
 ### Prototype
+![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/prototype.txt)
 ### Factory Method
 ### Abstract Factory
 

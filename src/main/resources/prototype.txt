@@ -1,0 +1,27 @@
+@startuml
+
+Client ..> Prototype : clone
+Prototype <|-- ConcretePrototype1
+Prototype <|-- ConcretePrototype2
+
+class Client
+
+interface Prototype {
+    + clone()
+}
+
+class ConcretePrototype1 {
+    - attributes
+    + clone()
+    + getAttributes()
+    + setAttributes(attributes)
+}
+
+class ConcretePrototype2 {
+    - attributes
+    + clone()
+    + getAttributes()
+    + setAttributes(attributes)
+}
+
+@enduml
