@@ -20,7 +20,7 @@ class SingletonTest {
         Assertions.assertNotNull(instance1);
 
         Singleton instance2 = Singleton.getInstance();
-        Assertions.assertEquals(instance1, instance2);
+        Assertions.assertSame(instance1, instance2);
     }
 
     @BeforeAll
@@ -35,7 +35,7 @@ class SingletonTest {
         ExecutorService executor = Executors.newFixedThreadPool(2);
         List<Callable<Singleton>> callableTasks = List.of(Singleton::getInstance, Singleton::getInstance);
         List<Future<Singleton>> futures = executor.invokeAll(callableTasks);
-        Assertions.assertEquals(futures.get(0).get(), futures.get(1).get());
+        Assertions.assertSame(futures.get(0).get(), futures.get(1).get());
     }
 
     @Test
@@ -68,7 +68,7 @@ class SingletonTest {
              ObjectInputStream in = new ObjectInputStream(is);) {
             instance2 = (Singleton) in.readObject();
         }
-        Assertions.assertEquals(instance1, instance2);
+        Assertions.assertSame(instance1, instance2);
     }
 
 }
