@@ -1,0 +1,35 @@
+@startuml
+
+Client ..> AbstractFactory
+AbstractFactory <|-- ConcreteFactory1
+AbstractFactory <|-- ConcreteFactory2
+AbstractFactory ..> Product : creates
+
+Product <|-- ConcreteProduct11
+Product <|-- ConcreteProduct12
+ConcreteFactory1 ..> ConcreteProduct11 : creates
+ConcreteFactory1 ..> ConcreteProduct12 : creates
+
+Product <|-- ConcreteProduct21
+Product <|-- ConcreteProduct22
+ConcreteFactory2 ..> ConcreteProduct21 : creates
+ConcreteFactory2 ..> ConcreteProduct22 : creates
+
+class Client
+
+interface Product
+
+abstract class AbstractFactory {
+    + factoryMethod(type: FactoryType): AbstractFactory
+    + {abstract} factoryMethod(type: ProductType): Product
+}
+
+class ConcreteFactory1 {
+    + factoryMethod(type: ProductType): Product
+}
+
+class ConcreteFactory2 {
+    + factoryMethod(type: ProductType): Product
+}
+
+@enduml
