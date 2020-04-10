@@ -5,6 +5,7 @@ import creational.prototype.Handset;
 import creational.prototype.Laptop;
 import creational.prototype.Registry;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -34,6 +35,7 @@ class PrototypeTest {
         Assertions.assertEquals("touch", laptop2.getKeyboard());
     }
 
+    @Disabled
     @Test
     void createGadgetsToCheckPerformance() {
         List<Gadget> gadgets = new ArrayList<>();
