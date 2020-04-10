@@ -1,0 +1,16 @@
+@startuml
+
+Client ..> Factory
+Factory ..> Product : creates
+Product <|-- ConcreteProduct1
+Product <|-- ConcreteProduct2
+
+class Client
+
+interface Product
+
+class Factory {
+    + factoryMethod(type: ProductType): Product
+}
+
+@enduml

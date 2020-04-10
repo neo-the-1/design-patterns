@@ -8,6 +8,7 @@
 ### Prototype
 ![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/prototype.txt)
 ### Factory Method
+![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/factory_method.txt)
 ### Abstract Factory
 
 ## Structural Design Patterns
