@@ -1,0 +1,11 @@
+@startuml
+
+Client ..> MyContract : uses
+interface MyContract
+
+MyContract <|-- Adapter
+Adapter --> OffTheShelf
+
+class OffTheShelf
+
+@enduml

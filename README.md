@@ -14,6 +14,7 @@
 
 ## Structural Design Patterns
 ### Adapter
+![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/structural/adapter.txt)
 ### Bridge
 ### Composite
 ### Decorator
