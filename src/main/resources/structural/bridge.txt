@@ -1,0 +1,18 @@
+@startuml
+
+Client ..> Abstraction : uses
+Abstraction <.. Implementor
+Abstraction <|-- RedefinedAbstraction1
+Abstraction <|-- RedefinedAbstraction2
+Implementor <|-- ConcreteImplementor1
+Implementor <|-- ConcreteImplementor2
+
+interface Abstraction {
+    + operation()
+}
+
+abstract Implementor {
+    {abstract} # operationImpl()
+}
+
+@enduml
