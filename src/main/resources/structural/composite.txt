@@ -1,0 +1,21 @@
+@startuml
+
+Component <|-- Leaf
+Component <|-- Composite
+Component --* Composite
+
+abstract Component {
+    - children: List<Component>
+    + operation()
+}
+
+class Leaf {
+    + operation()
+}
+
+class Composite {
+    + operation()
+    + add()
+}
+
+@enduml
