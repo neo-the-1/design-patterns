@@ -1,0 +1,15 @@
+@startuml
+
+Facade --> Component1
+Facade --> Component2
+Facade --> Package1
+Facade --> Package2
+
+package Package1 {}
+package Package2 {}
+
+class Facade {
+    + operation()
+}
+
+@enduml
