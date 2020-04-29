@@ -1,0 +1,20 @@
+@startuml
+
+Client --> Subject
+Subject <|-- RealSubject
+Subject <|-- Proxy
+RealSubject <-- Proxy
+
+interface Subject {
+    + operation()
+}
+
+class RealSubject {
+    + operation()
+}
+
+class Proxy {
+    + operation()
+}
+
+@enduml
