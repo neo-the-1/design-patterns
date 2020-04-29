@@ -1,0 +1,24 @@
+@startuml
+
+Flyweight <|-- Flyweight1
+Flyweight <|-- UnsharedFlyweight2
+FlyweightFactory o-- Flyweight
+
+interface Flyweight {
+    + operation(extrinsicState)
+}
+
+class Flyweight1 {
+    - intrinsicState
+    + operation(intrinsicState)
+}
+
+class UnsharedFlyweight2 {
+    + operation(extrinsicState)
+}
+
+class FlyweightFactory {
+    + getFlyweight(key)
+}
+
+@enduml

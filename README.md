@@ -24,6 +24,7 @@
 ### Facade
 ![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/structural/facade.txt)
 ### Flyweight
+![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/structural/flyweight.txt)
 ### Proxy
 
 ## Behavioral Design Patterns
