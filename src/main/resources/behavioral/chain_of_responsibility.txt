@@ -1,0 +1,20 @@
+@startuml
+
+Client --> Handler
+Handler <|-- ConcreteHandler1
+Handler <|-- ConcreteHandler2
+ConcreteHandler1 o-- Handler : next
+
+abstract Handler {
+    + handle(request)
+}
+
+class ConcreteHandler1 {
+    + handle(request)
+}
+
+class ConcreteHandler2 {
+    + handle(request)
+}
+
+@enduml

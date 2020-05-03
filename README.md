@@ -30,6 +30,7 @@
 
 ## Behavioral Design Patterns
 ### Chain of Responsibility
+![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/behavioral/chain_of_responsibility.txt)
 ### Command
 ### Interpreter
 ### Iterator
