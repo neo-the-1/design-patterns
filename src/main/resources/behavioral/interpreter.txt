@@ -1,0 +1,21 @@
+@startuml
+
+Client --> Context
+Client --> Expression
+Expression <|-- TerminalExpression
+Expression <|-- NonTerminalExpression
+NonTerminalExpression o--Expression
+
+abstract Expression {
+    + interpret(context)
+}
+
+class TerminalExpression {
+    + interpret(context)
+}
+
+class NonTerminalExpression {
+    + interpret(context)
+}
+
+@enduml
