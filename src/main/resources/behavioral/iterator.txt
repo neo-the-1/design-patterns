@@ -1,0 +1,26 @@
+@startuml
+
+Aggregate --> Iterator : creates
+Aggregate <|-- ConcreteAggregate
+Iterator <|-- ConcreteIterator
+ConcreteAggregate --> ConcreteIterator
+
+interface Aggregate {
+    + iterator()
+}
+
+interface Iterator {
+    + next()
+    + hasNext()
+}
+
+class ConcreteAggregate {
+    + iterator()
+}
+
+class ConcreteIterator {
+    + next()
+    + hasNext()
+}
+
+@enduml

@@ -36,6 +36,7 @@
 ### Interpreter
 ![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/behavioral/interpreter.txt)
 ### Iterator
+![alt text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/neo-the-1/design-patterns/master/src/main/resources/behavioral/iterator.txt)
 ### Mediator
 ### Memento
 ### Observer
